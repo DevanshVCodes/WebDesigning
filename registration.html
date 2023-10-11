@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    select {
+      height: 40px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="email">E-mail ID:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="sex">Sex:</label>
+    <input type="radio" id="male" name="sex" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="sex" value="female" required>
+    <label for="female">Female</label>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea>
+
+    <label for="dob">Date of Birth:</label>
+    <select id="day" name="day" required>
+      <option value="">Day</option>
+      <!-- Add options for days here -->
+    </select>
+    <select id="month" name="month" required>
+      <option value="">Month</option>
+      <!-- Add options for months here -->
+    </select>
+    <select id="year" name="year" required>
+      <option value="">Year</option>
+      <!-- Add options for years here -->
+    </select>
+
+    <label for="languages">Languages known:</label><br>
+    <input type="checkbox" id="english" name="languages" value="English">
+    <label for="english">English</label><br>
+    <input type="checkbox" id="telugu" name="languages" value="Telegu">
+    <label for="telugu">Telegu</label><br>
+    <input type="checkbox" id="hindi" name="languages" value="Hindi">
+    <label for="hindi">Hindi</label><br>
+    <input type="checkbox" id="tamil" name="languages" value="Tamil">
+    <label for="tamil">Tamil</label>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
